@@ -1,33 +1,90 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  z-index: -1;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-left {
+  width: 50%;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
+.color-left {
+  width: 100%;
+  height: 100vh;
+  background-color: #ebe6e3;
+  animation: slide 0.7s ease-out running;
+}
+
+.bg-right {
+  width: 50%;
+  height: 100vh;
+  background-color: #f3f0ed;
+}
+
+.color-right {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  animation: slide 0.5s ease-out reverse both running;
+}
+
+@keyframes slide {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-100%);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0);
   }
+}
+
+.img-left {
+  position: absolute;
+  opacity: 0;
+  width: 20%;
+  left: 20%;
+  top: 35%;
+  height: auto;
+  animation: 0.7s 1s ease-out slide-img;
+  animation-fill-mode: forwards;
+}
+
+.img-right {
+  position: absolute;
+  opacity: 0;
+  width: 30%;
+  left: 50%;
+  bottom: 0px;
+  height: auto;
+  animation: 0.7s 1.3s ease-out slide-img;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-img {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.section-one {
+  padding: 100px;
+}
+
+.section-title {
+  letter-spacing: .12rem;
+  color: #444443;
+  text-transform: uppercase;
+}
+
+.section-two {
+  height: 500px;
+  padding: 100px;
+  background-color: #ebe6e3;
 }

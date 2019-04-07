@@ -1,27 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+
+import imgLeft from './home-left.jpg'
+import imgRight from './home-right.jpg'
+import FadeIns from './fade-ins.js'
+import Parallax from './parallax.js'
+import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <div className="App">
+          <div className="bg-left">
+            <div className="color-left" />
+            <img src={imgLeft} className="img-left" alt="logo" />
+          </div>
+          <div className="bg-right">
+            <div className="color-right" />
+            <img src={imgRight} className="img-right" alt="logo" />
+          </div>
+        </div>
+
+        <FadeIns />
+        <Parallax />
       </div>
-    );
+    )
   }
 }
 
