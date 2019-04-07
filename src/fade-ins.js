@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Fade from 'react-reveal/Fade'
-import Reveal from 'react-reveal/Reveal';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import ScrollAnimation from 'react-animate-on-scroll';
+import Reveal from 'react-reveal/Reveal'
+import ScrollableAnchor from 'react-scrollable-anchor'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import './App.css'
 
@@ -26,7 +26,7 @@ class FadeIns extends Component {
           </ScrollAnimation>
         </ScrollableAnchor>
 
-        <ScrollAnimation animateIn="fadeInLeft" duration={2}>
+        <ScrollAnimation animateIn="fadeInLeft" duration={1}>
           <h1>Fade in left</h1>
         </ScrollAnimation>
       </section>

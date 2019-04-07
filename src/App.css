@@ -84,7 +84,16 @@
 }
 
 .section-two {
-  height: 500px;
   padding: 100px;
   background-color: #ebe6e3;
+}
+
+.parallax-section {
+  padding: 100px;
+}
+
+.section-three {
+  height: 500px;
+  padding: 100px;
+  background-color: #f3f0ed;
 }

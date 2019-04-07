@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 import imgLeft from './home-left.jpg'
 import imgRight from './home-right.jpg'
 import FadeIns from './fade-ins.js'
-import Parallax from './parallax.js'
+import ParallaxTest from './parallax.js'
+import ParallaxTestBg from './parallax-bg.js'
 import './App.css'
 
 class App extends Component {
@@ -22,7 +23,13 @@ class App extends Component {
         </div>
 
         <FadeIns />
-        <Parallax />
+        <ParallaxTest />
+        <section className="section-two">
+          <p>Belle Epoque est une agence digitale basée à Paris.</p>
+          <p>Nous vous accompagnons dans toutes les étapes de la réalisation de votre projet digital : </p>
+          <p>stratégie, design, développement, communication et référencement.</p>
+        </section>
+        <ParallaxTestBg />
       </div>
     )
   }
